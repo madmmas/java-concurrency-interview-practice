@@ -1,0 +1,76 @@
+# ==========================================
+# Compiled Java Bytecode & Package Artifacts
+# ==========================================
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+
+# ==========================================
+# Maven Build Tool
+# ==========================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ==========================================
+# Gradle Build Tool
+# ==========================================
+.gradle/
+build/
+!gradle-wrapper.jar
+.gradletasknamecache
+
+# ==========================================
+# IntelliJ IDEA IDE
+# ==========================================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ==========================================
+# Eclipse IDE
+# ==========================================
+.metadata/
+.classpath
+.project
+.settings/
+*.launch
+bin/
+
+# ==========================================
+# NetBeans IDE
+# ==========================================
+**/nbproject/private/
+**/nbproject/project.properties
+**/nbproject/SpringBeans.xml
+nbdist/
+**/nbbuild/
+**/nbproject/
+
+# ==========================================
+# VS Code IDE
+# ==========================================
+.vscode/
+
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+Thumbs.db
