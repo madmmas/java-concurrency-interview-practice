@@ -1,5 +1,7 @@
 package com.concurrency.beginner.p01;
 
+import java.util.stream.IntStream;
+
 /**
  * Problem 01 - Thread Basics
  *
@@ -24,14 +26,14 @@ public class PrintingThread extends Thread {
      * @param repeatCount how many times to print it
      */
     public PrintingThread(String threadName, String message, int repeatCount) {
-        // TODO: call super with threadName
+        super(threadName);
         this.message = message;
         this.repeatCount = repeatCount;
     }
 
     @Override
     public void run() {
-        // TODO: record the executing thread name, then print message repeatCount times
-        throw new UnsupportedOperationException("Implement this method");
+        this.executingThreadName = Thread.currentThread().getName();
+        IntStream.range(0, this.repeatCount).forEach(i -> System.out.println(this.message));
     }
 }
