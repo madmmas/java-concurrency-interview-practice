@@ -1,6 +1,7 @@
 package com.concurrency.beginner.p02;
 
 import java.util.List;
+import java.util.stream.IntStream;
 
 /**
  * Problem 02 - Runnable vs Thread
@@ -17,8 +18,9 @@ public class TaskRunner {
      * @param threadName name for the new thread
      */
     public void runTask(Runnable task, String threadName) throws InterruptedException {
-        // TODO: create a thread with the given name, start it, then join it
-        throw new UnsupportedOperationException("Implement this method");
+        Thread thread = new Thread(task, threadName);
+        thread.start();
+        thread.join();
     }
 
     /**
@@ -28,8 +30,13 @@ public class TaskRunner {
      * @param tasks list of tasks to run concurrently
      */
     public void runTasksParallel(List<Runnable> tasks) throws InterruptedException {
-        // TODO: start all threads, then join all threads
-        throw new UnsupportedOperationException("Implement this method");
+        int i = 0;
+        for(Runnable task: tasks) {
+            Thread thread = new Thread(task, "worker-" + i);
+            thread.start();
+            thread.join();
+            i++;
+        }
     }
 
     /**
@@ -41,7 +48,8 @@ public class TaskRunner {
      * @return a Runnable implementing the described behavior
      */
     public Runnable buildCountingRunnable(List<Integer> collector, int value, int times) {
-        // TODO: return a lambda or anonymous class
-        throw new UnsupportedOperationException("Implement this method");
+        return () -> {
+            IntStream.range(0, times).forEach(i -> collector.add(value));
+        };
     }
 }
