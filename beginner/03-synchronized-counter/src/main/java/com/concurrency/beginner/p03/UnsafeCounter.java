@@ -13,8 +13,7 @@ public class UnsafeCounter {
 
     /** Increments without synchronization — intentionally unsafe. */
     public void increment() {
-        // TODO: just do count++ with no synchronization
-        throw new UnsupportedOperationException("Implement this method");
+        count++;
     }
 
     public int getCount() {
