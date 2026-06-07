@@ -28,11 +28,9 @@ public class BoundedBuffer<T> {
      * @param item the item to add (must not be null)
      */
     public synchronized void put(T item) throws InterruptedException {
-        // TODO:
-        //  1. while buffer is full, wait()
-        //  2. add item to queue
-        //  3. notifyAll()
-        throw new UnsupportedOperationException("Implement this method");
+        while(queue.size() == capacity) wait();
+        queue.offer(item);
+        notifyAll();
     }
 
     /**
@@ -42,12 +40,10 @@ public class BoundedBuffer<T> {
      * @return the next item from the buffer
      */
     public synchronized T take() throws InterruptedException {
-        // TODO:
-        //  1. while buffer is empty, wait()
-        //  2. remove and save head of queue
-        //  3. notifyAll()
-        //  4. return the removed item
-        throw new UnsupportedOperationException("Implement this method");
+        while(queue.isEmpty()) wait();
+        T head = queue.poll();
+        notifyAll();
+        return head;
     }
 
     /** Returns the number of items currently in the buffer. */
