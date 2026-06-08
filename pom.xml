@@ -14,6 +14,11 @@
         <module>beginner/03-synchronized-counter</module>
         <module>beginner/04-producer-consumer-basic</module>
         <module>beginner/05-thread-join</module>
+        <module>beginner/06-volatile-keyword</module>
+        <module>beginner/07-daemon-threads</module>
+        <module>beginner/08-thread-interrupt</module>
+        <module>beginner/09-atomic-integer</module>
+        <module>beginner/10-thread-local</module>
     </modules>
 
     <properties>

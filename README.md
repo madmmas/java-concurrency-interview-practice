@@ -30,6 +30,11 @@ Each problem folder contains:
 | 03 | Synchronized Counter | `synchronized`, race conditions |
 | 04 | Producer-Consumer Basic | `wait()`, `notify()` |
 | 05 | Thread Join | `join()`, ordering guarantees |
+| 06 | Volatile Keyword     | Memory visibility, JMM, stop-flags |
+| 07 | Daemon Threads       | Daemon vs user threads, background services |
+| 08 | Thread Interruption  | Cooperative cancellation, `InterruptedException` |
+| 09 | AtomicInteger & CAS  | Lock-free programming, Compare-And-Swap |
+| 10 | ThreadLocal          | Per-thread storage, memory-leak pitfall |
 
 ### 🟡 Intermediate (16–35) *(coming soon)*
 ### 🔴 Advanced (36–50) *(coming soon)*
