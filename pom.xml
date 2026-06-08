@@ -19,6 +19,11 @@
         <module>beginner/08-thread-interrupt</module>
         <module>beginner/09-atomic-integer</module>
         <module>beginner/10-thread-local</module>
+        <module>beginner/11-reentrant-lock</module>
+        <module>beginner/12-read-write-lock</module>
+        <module>beginner/13-countdown-latch</module>
+        <module>beginner/14-thread-safe-singleton</module>
+        <module>beginner/15-fizzbuzz-threads</module>
     </modules>
 
     <properties>

@@ -35,6 +35,11 @@ Each problem folder contains:
 | 08 | Thread Interruption  | Cooperative cancellation, `InterruptedException` |
 | 09 | AtomicInteger & CAS  | Lock-free programming, Compare-And-Swap |
 | 10 | ThreadLocal          | Per-thread storage, memory-leak pitfall |
+| 11 | ReentrantLock | Explicit locking, `Condition`, deadlock-free transfer |
+| 12 | ReadWriteLock | Concurrent reads, exclusive writes, lock downgrading |
+| 13 | CountDownLatch | Startup gate, starting-gun pattern, timed await |
+| 14 | Thread-Safe Singleton | Eager / Synchronized / DCL+volatile / Holder |
+| 15 | FizzBuzz Threads | 4-thread coordination with wait/notifyAll |
 
 ### 🟡 Intermediate (16–35) *(coming soon)*
 ### 🔴 Advanced (36–50) *(coming soon)*
