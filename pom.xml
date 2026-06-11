@@ -44,6 +44,21 @@
         <module>advanced/33-stm-simulation</module>
         <module>advanced/34-actor-model</module>
         <module>advanced/35-concurrent-skip-list</module>
+        <module>expert/36-reactive-streams</module>
+        <module>expert/37-distributed-counter</module>
+        <module>expert/38-priority-task-executor</module>
+        <module>expert/39-concurrent-lru-cache</module>
+        <module>expert/40-thread-safe-object-pool</module>
+        <module>expert/41-barrier-synchronizer</module>
+        <module>expert/42-async-event-bus</module>
+        <module>expert/43-concurrent-graph-traversal</module>
+        <module>expert/44-rate-limited-executor</module>
+        <module>expert/45-lock-free-ring-buffer</module>
+        <module>expert/46-concurrent-trie</module>
+        <module>expert/47-transaction-manager</module>
+        <module>expert/48-thread-confinement-pool</module>
+        <module>expert/49-parallel-merge-sort-advanced</module>
+        <module>expert/50-mini-job-scheduler</module>
     </modules>
 
     <properties>

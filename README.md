@@ -9,8 +9,9 @@ A structured collection of **50 Java concurrency problems** organized by difficu
 ```
 java-concurrency-practice/
 ├── beginner/       # Problems 01–15  (Foundations)
-├── intermediate/   # Problems 16–35  (Core Concurrency APIs)
-└── advanced/       # Problems 36–50  (Expert-Level Patterns)
+├── intermediate/   # Problems 16–25  (Core Concurrency APIs)
+└── advanced/       # Problems 26–35  (Core advanced patterns)
+└── expert/         # Problems 36–50  (Deep systems design)
 ```
 
 Each problem folder contains:
@@ -41,7 +42,7 @@ Each problem folder contains:
 | 14 | Thread-Safe Singleton | Eager / Synchronized / DCL+volatile / Holder |
 | 15 | FizzBuzz Threads | 4-thread coordination with wait/notifyAll |
 
-### 🟡 Intermediate (16–35)
+### 🟡 Intermediate (16–25)
 | # | Problem | Classes | Core Concept |
 |---|---------|---------|-------------|
 | 16 | Semaphore            | `ConnectionPool`, `RateLimiter`         | Permits, bounded concurrency, token-bucket |
@@ -55,7 +56,7 @@ Each problem folder contains:
 | 24 | StampedLock               | `OptimisticPoint`, `StampedCache`             | Optimistic reads, `validate()`, `tryConvertToWriteLock` |
 | 25 | ConcurrentHashMap         | `WordFrequencyCounter`, `ConcurrentInventory` | `merge`, `compute`, `replace` CAS loop, parallel bulk ops |
 
-### 🔴 Advanced (36–50)
+### 🔴 Advanced (26–35)
 | #  | Problem                  | Skeleton Classes                                          | Core Concept                                      |
 |----|--------------------------|-----------------------------------------------------------|---------------------------------------------------|
 | 26 | Lock-Free Data Structures| `TreiberStack`, `LockFreeQueue`, `ABADemonstrator`        | CAS retry loops, sentinel node, ABA problem       |
@@ -69,6 +70,24 @@ Each problem folder contains:
 | 34 | Actor Model | `Actor<S,M>`, `BankAccountActor`, `ActorSystem`, `PingPongActors` | Message-passing, mailbox, tell/ask, fire-and-forget vs request-reply, no shared state |
 | 35 | Concurrent Skip List | `ConcurrentSkipListSet` (lock-based), `LockFreeSkipListSet` (lock-free), `SkipListBenchmark` | O(log n) probabilistic structure, hand-over-hand locking, AtomicMarkableReference, logical deletion, linearisability |
 
+### 🔴 Expert (36–50)
+| # | Problem | Key Concept |
+|---|---------|-------------|
+| 36 | Reactive Streams | Flow.Publisher/Subscriber, back-pressure, TransformProcessor |
+| 37 | Distributed Counter | StripedCounter, LongAdder, MetricsCollector |
+| 38 | Priority Task Executor | PriorityBlockingQueue, PriorityTask, FIFO tie-breaking |
+| 39 | Concurrent LRU Cache | LinkedHashMap accessOrder, ReadWriteLock |
+| 40 | Thread-Safe Object Pool | LinkedBlockingQueue, AutoCloseable borrow/return |
+| 41 | Custom Barrier | ReentrantLock+Condition, generation counter, BrokenBarrierException |
+| 42 | Async Event Bus | ConcurrentHashMap, CopyOnWriteArrayList, class hierarchy dispatch |
+| 43 | Concurrent Graph Traversal | Parallel BFS (ExecutorService), Parallel DFS (ForkJoinPool) |
+| 44 | Rate-Limited Executor | Token bucket (lazy refill), tryAcquire with timeout |
+| 45 | Lock-Free Ring Buffer | SPSC volatile head/tail, MPSC AtomicLong+ready flags |
+| 46 | Concurrent Trie | computeIfAbsent, volatile isEnd, DFS collect |
+| 47 | 2PC Transaction Manager | Parallel prepare/commit/rollback, ExecutorService |
+| 48 | Thread Confinement Pool | ThreadLocal, DateFormatterPool, ConfinedWorkerPool |
+| 49 | Parallel Merge Sort Advanced | ForkJoinPool, RecursiveAction, adaptiveThreshold, binarySearch |
+| 50 | Mini Job Scheduler (Capstone) | Priority queue, token bucket, metrics, graceful shutdown |
 ---
 
 ## 🚀 Getting Started
