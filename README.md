@@ -55,7 +55,14 @@ Each problem folder contains:
 | 24 | StampedLock               | `OptimisticPoint`, `StampedCache`             | Optimistic reads, `validate()`, `tryConvertToWriteLock` |
 | 25 | ConcurrentHashMap         | `WordFrequencyCounter`, `ConcurrentInventory` | `merge`, `compute`, `replace` CAS loop, parallel bulk ops |
 
-### 🔴 Advanced (36–50) *(coming soon)*
+### 🔴 Advanced (36–50)
+| #  | Problem                  | Skeleton Classes                                          | Core Concept                                      |
+|----|--------------------------|-----------------------------------------------------------|---------------------------------------------------|
+| 26 | Lock-Free Data Structures| `TreiberStack`, `LockFreeQueue`, `ABADemonstrator`        | CAS retry loops, sentinel node, ABA problem       |
+| 27 | Java Memory Model        | `SafePublicationShowcase`, `HappensBeforeChain`, `MemoryVisibilityProbe` | happens-before rules, safe publication, volatile |
+| 28 | Deadlock Detection       | `ResourceAllocationGraph`, `DeadlockPreventer`, `DeadlockDemo` | RAG cycle detection, lock ordering, tryLock, ThreadMXBean |
+| 29 | ScheduledExecutorService | `TaskScheduler`, `CircuitBreaker`                         | scheduleAtFixedRate vs fixedDelay, circuit breaker state machine |
+| 30 | Custom ThreadPoolExecutor| `InstrumentedThreadPool`, `WorkerThreadFactory`, `BoundedCallerRunsPool` | hook methods, ThreadLocal latency, CallerRunsPolicy |
 
 ---
 
