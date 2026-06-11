@@ -63,6 +63,11 @@ Each problem folder contains:
 | 28 | Deadlock Detection       | `ResourceAllocationGraph`, `DeadlockPreventer`, `DeadlockDemo` | RAG cycle detection, lock ordering, tryLock, ThreadMXBean |
 | 29 | ScheduledExecutorService | `TaskScheduler`, `CircuitBreaker`                         | scheduleAtFixedRate vs fixedDelay, circuit breaker state machine |
 | 30 | Custom ThreadPoolExecutor| `InstrumentedThreadPool`, `WorkerThreadFactory`, `BoundedCallerRunsPool` | hook methods, ThreadLocal latency, CallerRunsPolicy |
+| 31 | Async Pipeline | `AsyncOrderProcessor`, `PipelineMerger`, `Order` | `thenCompose`, `thenCombine`, `allOf`, `anyOf`, `exceptionally`, fan-out/fan-in |
+| 32 | Work-Stealing Deque | `WorkStealingDeque<T>`, `WorkStealingScheduler` | Owner LIFO pop, thief FIFO steal, circular array, grow(), ForkJoinPool internals |
+| 33 | STM Simulation | `TVar<T>`, `Transaction`, `STM` | Optimistic concurrency, versioned reads, commit/retry protocol, composable atomicity |
+| 34 | Actor Model | `Actor<S,M>`, `BankAccountActor`, `ActorSystem`, `PingPongActors` | Message-passing, mailbox, tell/ask, fire-and-forget vs request-reply, no shared state |
+| 35 | Concurrent Skip List | `ConcurrentSkipListSet` (lock-based), `LockFreeSkipListSet` (lock-free), `SkipListBenchmark` | O(log n) probabilistic structure, hand-over-hand locking, AtomicMarkableReference, logical deletion, linearisability |
 
 ---
 
@@ -70,7 +75,13 @@ Each problem folder contains:
 
 ### Prerequisites
 - Java 11+
-- Maven 3.6+
+- Maven 3.6+ 
+- ⚠️ Java 17 required — Problems 34 and 35 use sealed interface and record types. Update your root pom.xml compiler target to 17:
+
+```xml
+<maven.compiler.source>17</maven.compiler.source>
+<maven.compiler.target>17</maven.compiler.target>
+```
 
 ### Run Tests for a Single Problem
 ```bash

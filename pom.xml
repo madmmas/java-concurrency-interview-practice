@@ -39,6 +39,11 @@
         <module>advanced/28-deadlock-detection</module>
         <module>advanced/29-scheduled-executor</module>
         <module>advanced/30-custom-thread-pool</module>
+        <module>advanced/31-async-pipeline</module>
+        <module>advanced/32-work-stealing-deque</module>
+        <module>advanced/33-stm-simulation</module>
+        <module>advanced/34-actor-model</module>
+        <module>advanced/35-concurrent-skip-list</module>
     </modules>
 
     <properties>
