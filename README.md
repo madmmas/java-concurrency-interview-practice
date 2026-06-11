@@ -41,7 +41,15 @@ Each problem folder contains:
 | 14 | Thread-Safe Singleton | Eager / Synchronized / DCL+volatile / Holder |
 | 15 | FizzBuzz Threads | 4-thread coordination with wait/notifyAll |
 
-### 🟡 Intermediate (16–35) *(coming soon)*
+### 🟡 Intermediate (16–35)
+| # | Problem | Classes | Core Concept |
+|---|---------|---------|-------------|
+| 16 | Semaphore            | `ConnectionPool`, `RateLimiter`         | Permits, bounded concurrency, token-bucket |
+| 17 | CyclicBarrier        | `ParallelMatrixMultiplier`, `PhaseSimulator` | Reusable barrier, barrier action, phased execution |
+| 18 | ExecutorService      | `TaskDispatcher`, `PrioritizedExecutor` | ThreadPoolExecutor, CallerRunsPolicy, PriorityBlockingQueue |
+| 19 | Future & Callable    | `AsyncTaskRunner`, `CompletablePipeline` | Future.get(), timeout, first-completed, CompletableFuture chaining |
+| 20 | ForkJoinPool         | `ParallelSum`, `ParallelMergeSort`, `ParallelSearch` | RecursiveTask, RecursiveAction, work-stealing, divide-and-conquer |
+
 ### 🔴 Advanced (36–50) *(coming soon)*
 
 ---
