@@ -29,6 +29,11 @@
         <module>intermediate/18-executor-service</module>
         <module>intermediate/19-future-callable</module>
         <module>intermediate/20-fork-join-pool</module>
+        <module>intermediate/21-blocking-queue</module>
+        <module>intermediate/22-exchanger</module>
+        <module>intermediate/23-phaser</module>
+        <module>intermediate/24-stamped-lock</module>
+        <module>intermediate/25-concurrent-hashmap</module>
     </modules>
 
     <properties>

@@ -49,6 +49,11 @@ Each problem folder contains:
 | 18 | ExecutorService      | `TaskDispatcher`, `PrioritizedExecutor` | ThreadPoolExecutor, CallerRunsPolicy, PriorityBlockingQueue |
 | 19 | Future & Callable    | `AsyncTaskRunner`, `CompletablePipeline` | Future.get(), timeout, first-completed, CompletableFuture chaining |
 | 20 | ForkJoinPool         | `ParallelSum`, `ParallelMergeSort`, `ParallelSearch` | RecursiveTask, RecursiveAction, work-stealing, divide-and-conquer |
+| 21 | BlockingQueue Deep Dive   | `WorkStealingPipeline`, `DelayedTaskScheduler` | Poison-pill shutdown, `DelayQueue`, `Delayed` interface |
+| 22 | Exchanger                 | `DoubleBufferedLogger`, `GeneticCrossover`    | Bidirectional handoff, double-buffering pattern |
+| 23 | Phaser                    | `DynamicWorkerPool`, `PipelinedDataProcessor` | Dynamic registration, `onAdvance`, `arriveAndDeregister` |
+| 24 | StampedLock               | `OptimisticPoint`, `StampedCache`             | Optimistic reads, `validate()`, `tryConvertToWriteLock` |
+| 25 | ConcurrentHashMap         | `WordFrequencyCounter`, `ConcurrentInventory` | `merge`, `compute`, `replace` CAS loop, parallel bulk ops |
 
 ### 🔴 Advanced (36–50) *(coming soon)*
 
